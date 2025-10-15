@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: slateblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    background: skyblue;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 1);
+}
+
+.form-container {
+    background: gainsboro;
+    padding: 15px;
+    margin: 15px;
+
+}
+
+.main-form {
+    display: flex;
+    align-items: center;
+}
+
+.main-form label {
+    font-size: 2vh;
+    margin: 10px;
+}
+
+#task {
+    width: 250px;
+    height: 50px;
+    border: none;
+    padding: 10px;
+    font-size: 1.8vh;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+#addTask {
+    background-image: url('./img/add.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    height: 60px;
+    transition: 200ms;
+}
+
+#addTask:hover {
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.8);
+    transition: 200ms;
+    transform: scale(1.1);
+}
+
+.error {
+    color: red;
+}
+
+.todo-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: mediumpurple;
+    border: 1px solid white;
+    margin: 10px;
+    padding: 15px;
+}
+
+.task-name {
+    font-size: 2em;
+}
+
+.btn-delete {
+    background-image: url('./img/delete.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    height: 60px;
+    transition: 200ms;
+}
+
+.btn-delete:hover {
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.8);
+    transition: 200ms;
+    transform: scale(1.1);
+}
